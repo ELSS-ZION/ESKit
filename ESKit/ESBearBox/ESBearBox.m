@@ -61,7 +61,6 @@ static NSString * const ReuseID = @"Cell";
     _itemSize = itemSize;
     ESBearBoxLayout *layout = (ESBearBoxLayout *)self.collectionViewLayout;
     layout.itemSize = itemSize;
-    [self layoutIfNeeded];
 }
 
 - (void)setMaxCols:(unsigned long)maxCols
@@ -69,7 +68,6 @@ static NSString * const ReuseID = @"Cell";
     _maxCols = maxCols;
     ESBearBoxLayout *layout = (ESBearBoxLayout *)self.collectionViewLayout;
     layout.maxCols = maxCols;
-    [self layoutIfNeeded];
 }
 
 - (void)setInternalItemSpacing:(CGSize)internalItemSpacing
@@ -77,7 +75,6 @@ static NSString * const ReuseID = @"Cell";
     _internalItemSpacing = internalItemSpacing;
     ESBearBoxLayout *layout = (ESBearBoxLayout *)self.collectionViewLayout;
     layout.internalItemSpacing = internalItemSpacing;
-    [self layoutIfNeeded];
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -96,7 +93,6 @@ static NSString * const ReuseID = @"Cell";
     
     [cell addSubview:self.items[indexPath.row]];
     self.items[indexPath.row].frame = cell.bounds;
-    cell.backgroundColor = [UIColor yellowColor];
     cell.clipsToBounds = YES;
     return cell;
 }
