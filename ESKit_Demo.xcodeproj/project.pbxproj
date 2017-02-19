@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		241D6CEF1E59DDBB0067938F /* ESBearBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 241D6CEC1E59DDBB0067938F /* ESBearBox.m */; };
 		241D6CF01E59DDBB0067938F /* ESBearBoxLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 241D6CEE1E59DDBB0067938F /* ESBearBoxLayout.m */; };
+		241D6D181E5A54210067938F /* MyBearBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 241D6D171E5A54210067938F /* MyBearBox.m */; };
 		248469EF1E5352B60010E76D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 248469EE1E5352B60010E76D /* main.m */; };
 		248469F21E5352B60010E76D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 248469F11E5352B60010E76D /* AppDelegate.m */; };
 		248469F51E5352B60010E76D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248469F41E5352B60010E76D /* ViewController.m */; };
@@ -22,6 +23,8 @@
 		241D6CEC1E59DDBB0067938F /* ESBearBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESBearBox.m; sourceTree = "<group>"; };
 		241D6CED1E59DDBB0067938F /* ESBearBoxLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESBearBoxLayout.h; sourceTree = "<group>"; };
 		241D6CEE1E59DDBB0067938F /* ESBearBoxLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESBearBoxLayout.m; sourceTree = "<group>"; };
+		241D6D161E5A54210067938F /* MyBearBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBearBox.h; sourceTree = "<group>"; };
+		241D6D171E5A54210067938F /* MyBearBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBearBox.m; sourceTree = "<group>"; };
 		248469EA1E5352B60010E76D /* ESKit_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESKit_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		248469EE1E5352B60010E76D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		248469F01E5352B60010E76D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 		248469EC1E5352B60010E76D /* ESKit_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				241D6D161E5A54210067938F /* MyBearBox.h */,
+				241D6D171E5A54210067938F /* MyBearBox.m */,
 				248469F01E5352B60010E76D /* AppDelegate.h */,
 				248469F11E5352B60010E76D /* AppDelegate.m */,
 				248469F31E5352B60010E76D /* ViewController.h */,
@@ -182,6 +187,7 @@
 				241D6CEF1E59DDBB0067938F /* ESBearBox.m in Sources */,
 				248469F21E5352B60010E76D /* AppDelegate.m in Sources */,
 				248469EF1E5352B60010E76D /* main.m in Sources */,
+				241D6D181E5A54210067938F /* MyBearBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

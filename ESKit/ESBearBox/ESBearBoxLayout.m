@@ -22,10 +22,15 @@
     }
     
     self.itemCount = [self.collectionView numberOfItemsInSection:0];
+    
 }
 
 - (CGSize)collectionViewContentSize
 {
+    if (self.itemCount == 0) {
+        return CGSizeZero;
+    }
+    
     CGFloat width = self.itemSize.width * self.maxCols + self.internalItemSpacing.width * (self.maxCols - 1);
     
     NSLog(@"%f", width);

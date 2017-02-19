@@ -10,6 +10,8 @@
 #import "ESBearBox.h"
 #import "ESBearBoxLayout.h"
 
+#import "MyBearBox.h"
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet ESBearBox *bearBox;
 
@@ -26,19 +28,22 @@
         redView.backgroundColor = [UIColor redColor];
         [tmpArr addObject:redView];
     }
+
+//    self.bearBox.items = tmpArr;
+//    self.bearBox.itemSize = CGSizeMake(30, 30);
+//    self.bearBox.maxCols = 5;
+//    self.bearBox.internalItemSpacing = CGSizeMake(5, 5);
+//
+//    
+//    
+//    ESBearBox *bBox = [[ESBearBox alloc] initWithFrame:CGRectMake(88, 88, 0, 0)];
+//    bBox.items = tmpArr;
+//    bBox.itemSize = CGSizeMake(20, 20);
+//    bBox.internalItemSpacing = CGSizeMake(10, 10);
+//    [self.view addSubview:bBox];
     
-    self.bearBox.items = tmpArr;
-    self.bearBox.itemSize = CGSizeMake(30, 30);
-    self.bearBox.maxCols = 5;
-    self.bearBox.internalItemSpacing = CGSizeMake(5, 5);
-    
-    
-    
-    ESBearBox *bBox = [[ESBearBox alloc] initWithFrame:CGRectMake(88, 88, 0, 0)];
-    bBox.items = tmpArr;
-    bBox.itemSize = CGSizeMake(20, 20);
-    bBox.internalItemSpacing = CGSizeMake(10, 10);
-    [self.view addSubview:bBox];
+//    MyBearBox *bBox = [MyBearBox bearBoxWithOrigin:CGPointZero Items:tmpArr];
+//    [self.view addSubview:bBox];
 }
 
 @end

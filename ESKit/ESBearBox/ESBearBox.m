@@ -45,6 +45,16 @@ static NSString * const ReuseID = @"Cell";
     [self reloadData];
 }
 
+//@synthesize items = _items;
+//- (NSArray<UIView *> *)items
+//{
+//    if (_items == nil) {
+//        _items = [NSArray array];
+//    }
+//    
+//    return _items;
+//}
+
 - (void)setItemSize:(CGSize)itemSize
 {
     _itemSize = itemSize;
