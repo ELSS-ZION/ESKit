@@ -17,7 +17,7 @@ static NSString * const ReuseID = @"Cell";
 {
     ESBearBox *instance = [super initWithFrame:frame collectionViewLayout:[[ESBearBoxLayout alloc] init]];
     
-    [instance setup];
+    [instance ___setup];
     return instance;
 }
 
@@ -26,12 +26,12 @@ static NSString * const ReuseID = @"Cell";
     self = [super initWithCoder:coder];
     if (self) {
         self.collectionViewLayout = [[ESBearBoxLayout alloc] init];
-        [self setup];
+        [self ___setup];
     }
     return self;
 }
 
-- (void)setup
+- (void)___setup
 {
     self.dataSource = self;
     [self registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:ReuseID];
