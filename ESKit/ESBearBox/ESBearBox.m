@@ -42,6 +42,7 @@ static NSString * const ReuseID = @"Cell";
 - (void)setItems:(NSArray<UIView *> *)items
 {
     _items = items;
+    [self layoutIfNeeded];
     [self reloadData];
 }
 
@@ -60,6 +61,7 @@ static NSString * const ReuseID = @"Cell";
     _itemSize = itemSize;
     ESBearBoxLayout *layout = (ESBearBoxLayout *)self.collectionViewLayout;
     layout.itemSize = itemSize;
+    [self layoutIfNeeded];
 }
 
 - (void)setMaxCols:(unsigned long)maxCols
@@ -67,6 +69,7 @@ static NSString * const ReuseID = @"Cell";
     _maxCols = maxCols;
     ESBearBoxLayout *layout = (ESBearBoxLayout *)self.collectionViewLayout;
     layout.maxCols = maxCols;
+    [self layoutIfNeeded];
 }
 
 - (void)setInternalItemSpacing:(CGSize)internalItemSpacing
@@ -74,6 +77,7 @@ static NSString * const ReuseID = @"Cell";
     _internalItemSpacing = internalItemSpacing;
     ESBearBoxLayout *layout = (ESBearBoxLayout *)self.collectionViewLayout;
     layout.internalItemSpacing = internalItemSpacing;
+    [self layoutIfNeeded];
 }
 
 #pragma mark - UICollectionViewDataSource
