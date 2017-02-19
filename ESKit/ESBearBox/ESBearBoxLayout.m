@@ -32,8 +32,6 @@
     }
     
     CGFloat width = self.itemSize.width * self.maxCols + self.internalItemSpacing.width * (self.maxCols - 1);
-    
-    NSLog(@"%f", width);
     NSUInteger rowCount = (self.itemCount - 1) / self.maxCols + 1;
     CGFloat height = self.itemSize.height * (CGFloat)rowCount + (rowCount - 1) * self.internalItemSpacing.height;
     
