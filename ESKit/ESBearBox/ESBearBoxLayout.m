@@ -31,7 +31,13 @@
         return CGSizeZero;
     }
     
-    CGFloat width = self.itemSize.width * self.maxCols + self.internalItemSpacing.width * (self.maxCols - 1);
+    CGFloat width;
+    if (self.itemCount < self.maxCols) {
+        width = self.itemSize.width * self.itemCount + self.internalItemSpacing.width * (self.itemCount -1);
+    }else {
+        width = self.itemSize.width * self.maxCols + self.internalItemSpacing.width * (self.maxCols - 1);
+    }
+    
     NSUInteger rowCount = (self.itemCount - 1) / self.maxCols + 1;
     CGFloat height = self.itemSize.height * (CGFloat)rowCount + (rowCount - 1) * self.internalItemSpacing.height;
     
