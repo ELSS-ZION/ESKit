@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     NSMutableArray<UIView *> *tmpArr = [NSMutableArray array];
-    for (int i=0; i<4; i++) {
+    for (int i=0; i<2; i++) {
         UIView *redView = [[UIView alloc] init];
         redView.backgroundColor = [UIColor redColor];
         [tmpArr addObject:redView];
@@ -41,11 +41,14 @@
 //    self.bearBox.items = tmpArr;
 //    NSLog(@"%@", NSStringFromCGRect(self.bearBox.frame));
 
-    
     ESBearBox *bBox = [[ESBearBox alloc] initWithFrame:CGRectMake(88, 88, 0, 0)];
     bBox.items = tmpArr;
+    
+    bBox.itemSize = CGSizeMake(300, 300);
     bBox.itemSize = CGSizeMake(20, 20);
+    
     bBox.internalItemSpacing = CGSizeMake(10, 10);
+    bBox.internalItemSpacing = CGSizeMake(0, 0);
     [self.view addSubview:bBox];
 }
 
